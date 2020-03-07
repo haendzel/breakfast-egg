@@ -5,7 +5,7 @@
 # breakfast-egg
 
 My first steps in iOS native development with Swift language. 
-Simple app for cook eggs like Soft, Medium or Hard.
+Simple app for cook eggs.
 
 | Technology, language and frameworks |
 |-------------------|
