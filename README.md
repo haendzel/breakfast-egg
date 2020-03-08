@@ -2,7 +2,7 @@
 ![swift](https://img.shields.io/badge/swift-5.2-orange.svg)
 ![xcode](https://img.shields.io/badge/xcode-11.3.1-blue.svg)
 
-# BreakfastEgg app
+# BreakfastEgg
 
 My first steps in iOS native development with Swift language. 
 Simple app for cook eggs.
