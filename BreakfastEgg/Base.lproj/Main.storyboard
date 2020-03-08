@@ -130,19 +130,27 @@
                                                 <color key="trackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </progressView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jajko na miękko" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ifl-hU-gFn">
-                                                <rect key="frame" x="0.0" y="196" width="374" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="206" width="374" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51X-GU-2nK">
+                                                <rect key="frame" x="187" y="186.5" width="0.0" height="0.0"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <constraints>
-                                            <constraint firstAttribute="bottom" secondItem="Ifl-hU-gFn" secondAttribute="bottom" constant="30" id="Nea-Wv-9c2"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ifl-hU-gFn" secondAttribute="bottom" constant="20" id="Nea-Wv-9c2"/>
                                             <constraint firstItem="Ifl-hU-gFn" firstAttribute="leading" secondItem="tuU-65-11x" secondAttribute="leading" id="Rei-8h-dbN"/>
                                             <constraint firstAttribute="trailing" secondItem="Ifl-hU-gFn" secondAttribute="trailing" id="ahj-2a-bm5"/>
                                             <constraint firstAttribute="trailing" secondItem="a5t-2K-DJZ" secondAttribute="trailing" id="g1j-cD-nuu"/>
                                             <constraint firstItem="a5t-2K-DJZ" firstAttribute="leading" secondItem="tuU-65-11x" secondAttribute="leading" id="ojh-uP-Y53"/>
+                                            <constraint firstAttribute="bottom" secondItem="51X-GU-2nK" secondAttribute="bottom" constant="60" id="qdC-v4-PFZ"/>
                                             <constraint firstItem="a5t-2K-DJZ" firstAttribute="centerY" secondItem="tuU-65-11x" secondAttribute="centerY" id="rTN-lx-sRM"/>
+                                            <constraint firstItem="51X-GU-2nK" firstAttribute="centerX" secondItem="tuU-65-11x" secondAttribute="centerX" id="rWs-ZV-YmZ"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -160,6 +168,7 @@
                     <connections>
                         <outlet property="progressBar" destination="a5t-2K-DJZ" id="y9v-Fe-erK"/>
                         <outlet property="subtitleLabel" destination="Ifl-hU-gFn" id="ufn-ne-cbb"/>
+                        <outlet property="timerLabel" destination="51X-GU-2nK" id="drj-cA-iee"/>
                         <outlet property="titleLabel" destination="M9X-vI-ibR" id="d5p-FR-hiN"/>
                         <outletCollection property="collectionOfImages" destination="Uxs-iE-yEE" collectionClass="NSMutableArray" id="hnJ-rM-HA9"/>
                         <outletCollection property="collectionOfImages" destination="PZO-Yr-drN" collectionClass="NSMutableArray" id="lBY-NZ-jPg"/>

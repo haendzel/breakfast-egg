@@ -17,16 +17,17 @@ class ViewController: UIViewController {
     var totalTime = 0;
     var secondsPassed = 0;
     let eggTimes = ["Soft": 300, "Medium": 420, "Hard": 720]; //300, 420, 720
-    
     var player: AVAudioPlayer!
     
     @IBOutlet weak var subtitleLabel: UILabel!
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet var collectionOfImages:[UIImageView]!
+    @IBOutlet weak var timerLabel: UILabel!
     
     override func viewDidLoad() {
         subtitleLabel.text = ""
+        UIApplication.shared.isIdleTimerDisabled = true
         super.viewDidLoad()
     }
     
@@ -67,6 +68,7 @@ class ViewController: UIViewController {
             titleLabel.text = "Jajka się gotują..."
             progressBar.progress = Float(secondsPassed)/Float(totalTime)
             print(Float(secondsPassed)/Float(totalTime))
+            timerLabel.text = "\(secondsPassed)"
         } else {
             timer.invalidate()
             titleLabel.text = "Już gotowe!"
