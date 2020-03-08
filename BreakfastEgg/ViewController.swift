@@ -8,31 +8,48 @@
 
 import UIKit
 import Foundation
+import AVFoundation
 
 class ViewController: UIViewController {
     
     var seconds : Int!
     var timer = Timer();
-//    var isTimerRunning = false;
-    let eggTimes = ["Soft": 300, "Medium": 420, "Hard": 720];
+    var totalTime = 0;
+    var secondsPassed = 0;
+    let eggTimes = ["Soft": 300, "Medium": 420, "Hard": 720]; //300, 420, 720
     
-    @IBOutlet weak var timerLabel: UILabel!
+    var player: AVAudioPlayer!
+    
+    @IBOutlet weak var subtitleLabel: UILabel!
+    @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet var collectionOfImages:[UIImageView]!
+    
+    override func viewDidLoad() {
+        subtitleLabel.text = ""
+        super.viewDidLoad()
+    }
+    
     @IBAction func eggButton(_ sender: UIButton) {
-        
+        subtitleLabel.text = ""
+        secondsPassed = 0;
+        progressBar.progress = 0.0
+        titleLabel.text = "Jaki typ jajek wybierasz?"
         timer.invalidate()
         let hardness = sender.currentTitle!
-        let result = eggTimes[hardness]!
-        print(result)
+        totalTime = eggTimes[hardness]!
         switch (hardness) {
           case "Soft":
             seconds = eggTimes["Soft"]
+            subtitleLabel.text = "Jajko na miękko"
             break;
          case "Medium":
             seconds = eggTimes["Medium"]
+            subtitleLabel.text = "Jajko na średnio"
             break;
         case "Hard":
             seconds = eggTimes["Hard"]
+            subtitleLabel.text = "Jajko na twardo"
           default:
             print("Fatal Error")
             break;
@@ -45,9 +62,22 @@ class ViewController: UIViewController {
        }
     
     @objc func updateTimer() {
-        if seconds > 0 {
-            seconds -= 1;
-            timerLabel.text = "\(seconds!) sekund"
+        if secondsPassed < totalTime {
+            secondsPassed += 1
+            titleLabel.text = "Jajka się gotują..."
+            progressBar.progress = Float(secondsPassed)/Float(totalTime)
+            print(Float(secondsPassed)/Float(totalTime))
+        } else {
+            timer.invalidate()
+            titleLabel.text = "Już gotowe!"
+            playSound()
         }
+    }
+    
+    func playSound() {
+        let url = Bundle.main.url(forResource: "alarm", withExtension: "mp3")
+        player = try! AVAudioPlayer(contentsOf: url!)
+        player.play()
+        print(url!)
     }
 }

@@ -11,9 +11,10 @@
 		E92C28B0241435E0000955C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92C28AF241435E0000955C1 /* SceneDelegate.swift */; };
 		E92C28B2241435E0000955C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92C28B1241435E0000955C1 /* ViewController.swift */; };
 		E92C28B5241435E0000955C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92C28B3241435E0000955C1 /* Main.storyboard */; };
-		E92C28B7241435E3000955C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E92C28B6241435E3000955C1 /* Assets.xcassets */; };
 		E92C28BA241435E3000955C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E92C28B8241435E3000955C1 /* LaunchScreen.storyboard */; };
 		E92C28C5241435E3000955C1 /* BreakfastEggUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E92C28C4241435E3000955C1 /* BreakfastEggUITests.swift */; };
+		E967D55B2415324600EB3809 /* alarm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E967D55A2415324500EB3809 /* alarm.mp3 */; };
+		E967D55D241534CC00EB3809 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E967D55C241534CC00EB3809 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,12 +33,13 @@
 		E92C28AF241435E0000955C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E92C28B1241435E0000955C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E92C28B4241435E0000955C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E92C28B6241435E3000955C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E92C28B9241435E3000955C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E92C28BB241435E3000955C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E92C28C0241435E3000955C1 /* BreakfastEggUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakfastEggUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92C28C4241435E3000955C1 /* BreakfastEggUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakfastEggUITests.swift; sourceTree = "<group>"; };
 		E92C28C6241435E3000955C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E967D55A2415324500EB3809 /* alarm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarm.mp3; path = "../../EggTimer-iOS13/EggTimer/alarm.mp3"; sourceTree = "<group>"; };
+		E967D55C241534CC00EB3809 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../EggTimer-iOS13/EggTimer/Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +85,8 @@
 				E92C28AF241435E0000955C1 /* SceneDelegate.swift */,
 				E92C28B1241435E0000955C1 /* ViewController.swift */,
 				E92C28B3241435E0000955C1 /* Main.storyboard */,
-				E92C28B6241435E3000955C1 /* Assets.xcassets */,
+				E967D55C241534CC00EB3809 /* Assets.xcassets */,
+				E967D55A2415324500EB3809 /* alarm.mp3 */,
 				E92C28B8241435E3000955C1 /* LaunchScreen.storyboard */,
 				E92C28BB241435E3000955C1 /* Info.plist */,
 			);
@@ -181,8 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E92C28BA241435E3000955C1 /* LaunchScreen.storyboard in Resources */,
-				E92C28B7241435E3000955C1 /* Assets.xcassets in Resources */,
 				E92C28B5241435E0000955C1 /* Main.storyboard in Resources */,
+				E967D55D241534CC00EB3809 /* Assets.xcassets in Resources */,
+				E967D55B2415324600EB3809 /* alarm.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
