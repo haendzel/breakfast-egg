@@ -14,11 +14,3 @@ Simple app for cook eggs.
 | Foundation |
 | Xcode |
 
-
-### Example
-
-```
-@IBAction func eggButton(_ sender: UIButton) {
-    ...
-    }
-```
